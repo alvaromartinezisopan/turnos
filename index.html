@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turnos Septiembre - Glassmorphism</title>
+    <title>Turnos Septiembre - Glassmorphism TV 4K</title>
     <style>
         :root {
             --text-primary: #1d1d1f; 
             --text-secondary: #515154; 
-            --card-radius: 40px;
+            --card-radius: 28px;
         }
 
         * {
@@ -34,67 +34,68 @@
             display: flex;
             flex-direction: column;
             overflow: hidden; 
-            padding: 2vw 4vw;
+            padding: 2.5vh 4vw;
+            justify-content: space-between;
         }
 
         header {
             text-align: center;
-            margin-bottom: 1.5vw;
-            background: rgba(255, 255, 255, 0.45);
+            background: rgba(255, 255, 255, 0.5);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            padding: 1vw 3vw;
-            border-radius: 30px;
-            border: 1px solid rgba(255, 255, 255, 0.6);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+            padding: 0.8vh 2.5vw;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.04);
             width: fit-content;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto 1.5vh auto;
         }
 
         h1 {
-            font-size: 4vw;
+            font-size: 2.5vw;
             font-weight: 800;
-            letter-spacing: -0.03em;
+            letter-spacing: -0.02em;
             color: #1d1d1f;
-            margin-bottom: 0.2vw;
+            line-height: 1.1;
         }
 
         .subtitle {
-            font-size: 1.2vw;
+            font-size: 0.85vw;
             color: var(--text-secondary);
             font-weight: 600;
-            letter-spacing: 0.15em;
+            letter-spacing: 0.12em;
             text-transform: uppercase;
+            margin-top: 0.2vh;
         }
 
         main {
             display: flex;
-            gap: 4vw;
+            gap: 2.5vw;
             flex: 1;
+            min-height: 0; /* Permite escalado correcto en flex parent */
+            padding-bottom: 1vh;
         }
 
         .card {
-            background: rgba(255, 255, 255, 0.65);
+            background: rgba(255, 255, 255, 0.68);
             backdrop-filter: blur(24px);
             -webkit-backdrop-filter: blur(24px);
             border-radius: var(--card-radius);
             border: 1px solid rgba(255, 255, 255, 0.8);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08), inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06), inset 0 0 0 1px rgba(255, 255, 255, 0.5);
             
             flex: 1;
-            padding: 2vw 3vw;
+            padding: 1.8vh 2vw;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
 
         .card h2 {
-            font-size: 3.2vw;
+            font-size: 2vw;
             text-align: center;
             font-weight: 800;
-            margin-bottom: 1vw;
-            padding-bottom: 0.8vw;
+            padding-bottom: 0.8vh;
             position: relative;
         }
 
@@ -102,45 +103,43 @@
             content: '';
             position: absolute;
             bottom: 0;
-            left: 20%;
-            width: 60%;
+            left: 25%;
+            width: 50%;
             height: 3px;
             border-radius: 2px;
         }
 
         .card-manana h2 { color: #d97706; }
-        .card-manana h2::after { background: linear-gradient(90deg, transparent, #d97706, transparent); opacity: 0.3; }
+        .card-manana h2::after { background: linear-gradient(90deg, transparent, #d97706, transparent); opacity: 0.4; }
 
         .card-tarde h2 { color: #0066cc; }
-        .card-tarde h2::after { background: linear-gradient(90deg, transparent, #0066cc, transparent); opacity: 0.3; }
+        .card-tarde h2::after { background: linear-gradient(90deg, transparent, #0066cc, transparent); opacity: 0.4; }
 
         .role-group {
             display: flex;
             flex-direction: column;
-            align-items: center; /* Todo centrado */
+            align-items: center;
             text-align: center;
-            gap: 0.6vw;
-            padding: 0.8vw 1vw;
-            border-radius: 20px;
-            background: rgba(255, 255, 255, 0.5); /* Fondo sutil para agrupar */
-            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
-            border: 1px solid rgba(255,255,255,0.5);
+            gap: 0.4vh;
+            padding: 0.8vh 1vw;
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.45);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+            border: 1px solid rgba(255,255,255,0.6);
         }
 
-        /* Estilo "Píldora" / Etiqueta para los puestos, máxima visibilidad */
         .role-name {
             display: inline-block;
-            font-size: 1.3vw;
+            font-size: 0.9vw;
             color: #ffffff;
-            padding: 0.4vw 1.5vw;
+            padding: 0.3vh 1.2vw;
             border-radius: 50px;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            letter-spacing: 0.08em;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.12);
         }
 
-        /* Diferenciar por colores los puestos según el turno */
         .card-manana .role-name {
             background: linear-gradient(135deg, #f59e0b, #d97706);
         }
@@ -149,10 +148,11 @@
         }
 
         .people-names {
-            font-size: 1.9vw;
+            font-size: 1.35vw;
             font-weight: 700;
             color: #1d1d1f;
             letter-spacing: -0.01em;
+            line-height: 1.2;
         }
     </style>
 </head>
