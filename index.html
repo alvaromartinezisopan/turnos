@@ -54,7 +54,7 @@
         }
 
         .header-left, .header-right {
-            width: 30%; /* Ligeramente más amplio para acomodar widgets más grandes */
+            width: 30%;
             display: flex;
             align-items: center;
         }
@@ -86,7 +86,7 @@
             border-radius: 18px;
             font-weight: 700;
             color: var(--text-primary);
-            font-size: 1.5vw; /* Aumentado de 1.1vw a 1.5vw */
+            font-size: 1.5vw;
             display: flex;
             align-items: center;
             gap: 0.5vw;
@@ -109,7 +109,20 @@
             font-weight: 600;
             letter-spacing: 0.12em;
             text-transform: uppercase;
-            margin-top: 0.2vh;
+            margin-top: 0.4vh;
+        }
+
+        /* Estilo de subrayador rojo de alto contraste para pantalla 4K */
+        .highlight-red {
+            color: #d90429;
+            font-weight: 800;
+            text-decoration: underline;
+            text-decoration-color: #ff0000;
+            text-decoration-thickness: 0.25em;
+            text-underline-offset: 4px;
+            background: rgba(255, 0, 0, 0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
         }
 
         main {
@@ -208,7 +221,7 @@
         
         <div class="header-center">
             <h1>TURNOS SEPTIEMBRE</h1>
-            <p class="subtitle">Actualizado a 31/07/2026</p>
+            <p class="subtitle"><span class="highlight-red">Actualizado a 01/09/2026</span></p>
         </div>
         
         <div class="header-right">
@@ -233,11 +246,11 @@
             </div>
             <div class="role-group">
                 <div class="role-name">Perfiladora</div>
-                <div class="people-names">Ismael / David N. / Juanjo / Jacob M.</div>
+                <div class="people-names">Ismael / David N. / Dani N. / Jacob M.</div>
             </div>
             <div class="role-group">
                 <div class="role-name">Alimentador Lana</div>
-                <div class="people-names">Eduardo / Sergi / Ruben</div>
+                <div class="people-names">Isidro / Ruben</div>
             </div>
             <div class="role-group">
                 <div class="role-name">Espuma</div>
@@ -249,7 +262,7 @@
             </div>
             <div class="role-group">
                 <div class="role-name">Embaladora</div>
-                <div class="people-names">Juan Carlos / Victor / Pau</div>
+                <div class="people-names">Juan Carlos / Victor</div>
             </div>
             <div class="role-group">
                 <div class="role-name">Ubicador</div>
@@ -265,15 +278,15 @@
             </div>
             <div class="role-group">
                 <div class="role-name">Perfiladora</div>
-                <div class="people-names">Dani N. / Gregorio / Victor F. / Dani Algaba / Matheus</div>
+                <div class="people-names">Gregorio / Victor F. / Dani Algaba / Juanjo</div>
             </div>
             <div class="role-group">
                 <div class="role-name">Alimentador Lana</div>
-                <div class="people-names">Isidro / Jacobo G.</div>
+                <div class="people-names">Eduardo / Jacobo G.</div>
             </div>
             <div class="role-group">
                 <div class="role-name">Espuma</div>
-                <div class="people-names">Toni / Marc</div>
+                <div class="people-names">Toni / Marc / Hebert</div>
             </div>
             <div class="role-group">
                 <div class="role-name">Cortadora</div>
@@ -281,7 +294,7 @@
             </div>
             <div class="role-group">
                 <div class="role-name">Embaladora</div>
-                <div class="people-names">Reynaldo / Hebert</div>
+                <div class="people-names">Reynaldo / Matheus</div>
             </div>
             <div class="role-group">
                 <div class="role-name">Ubicador</div>
